@@ -20,7 +20,7 @@ function Projects({ projects }) {
                 to deliver incredible value to the nonprofits we are fortunate
                 enough to work with and look forward to seeing our products
                 continue to be used for years to come.">
-        <ActionButton link="https://github.com/hack4impact-YOUR-CHAPTER">
+        <ActionButton link="https://github.coecis.cornell.edu/hack4impact-cornell/">
           See our GitHub
         </ActionButton>
       </GradientBanner>
