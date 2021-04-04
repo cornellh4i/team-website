@@ -222,6 +222,16 @@ h2 {
   color: #555;
 }
 
+.error-title {
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+
+.error-description {
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 900px) {
   .blockquote-fancy-title {
     white-space: initial;
