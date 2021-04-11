@@ -13,17 +13,16 @@ function Error404() {
           <p className="text-center error-description"> Sorry! This page does not exist! </p>
         </Container>
         <style jsx>{`
-        .error-title {
-          margin-top: 120px;
-          margin-bottom: 10px;
-        }
-        
-        .error-description {
-          margin-top: 20px;
-          margin-bottom: 15px;
-        }
-      `}</style>
+          .error-title {
+            margin-top: 120px;
+            margin-bottom: 10px;
+          }
 
+          .error-description {
+            margin-top: 20px;
+            margin-bottom: 15px;
+          }
+        `}</style>
       </Section>
     </>
   );
