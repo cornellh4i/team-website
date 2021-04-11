@@ -6,12 +6,24 @@ import { Container } from 'reactstrap';
 function Error404() {
   return (
     <>
-      <Head title="404 Not Found" />
+      <Head title="Page Not Found" />
       <Section grey>
         <Container>
-          <h1 className="text-center error-title">404 Not Found</h1>
-          <p className="text-center error-description"> Oops! This page does not exist! </p>
+          <h1 className="text-center error-title"> 404 Page Not Found </h1>
+          <p className="text-center error-description"> Sorry! This page does not exist! </p>
         </Container>
+        <style jsx>{`
+        .error-title {
+          margin-top: 120px;
+          margin-bottom: 10px;
+        }
+        
+        .error-description {
+          margin-top: 20px;
+          margin-bottom: 15px;
+        }
+      `}</style>
+
       </Section>
     </>
   );
