@@ -9,7 +9,7 @@ function Error404() {
       <Head title="Page Not Found" />
       <Section grey>
         <Container>
-          <h1 className="text-center error-title"> 404 Page Not Found </h1>
+          <h1 className="text-center error-title"> Page Not Found :( </h1>
           <p className="text-center error-description"> Sorry! This page does not exist! </p>
         </Container>
         <style jsx>{`
