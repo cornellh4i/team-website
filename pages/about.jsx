@@ -12,7 +12,7 @@ function AboutPage({ members, alumni, values, directorQuotes }) {
       <Head title="About Us" />
       <GradientBanner
         title="We believe in using tech for good."
-        subHeadline="Hack4Impact believes in technology’s huge potential to empower activists and humanitarians to create lasting and impactful social change. We work to foster the wider adoption of software as a tool for social good."
+        subHeadline="Hack4Impact Cornell believes in technology’s huge potential to empower activists and humanitarians to create lasting and impactful social change. We work to foster the wider adoption of software as a tool for social good."
         arrow
       />
       <MissionSection />
