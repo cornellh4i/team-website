@@ -11,7 +11,7 @@ function ApplyPage() {
       <Head title="Apply" />
       <GradientBanner
         title="Apply"
-        subHeadline="We're open to students and nonprofits of all backgrounds, no matter your project or technical expertise."
+        subHeadline="We're open to developers and designers of all backgrounds! Recruitment occurs at the start of the Fall and Spring Semester."
         arrow
       />
       <Section>
