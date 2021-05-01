@@ -6,6 +6,20 @@ import Link from 'next/link';
 
 const InvolveSection = () => (
   <Row>
+
+    <Col md="12" className="text-center">
+          <h2 className="project-detail-title"> Applications will reopen at the start of Fall 2021. </h2>
+    </Col>
+    <Col md="12" className="text-center">
+        <p className="mission-body-text">
+          Are you passionate about software and social impact? Are you looking to join a unique and
+          close-knit community? Join Us! Our mission provides a distinct experience to develop
+          technical skills and interact with nonprofit clients all while applying your skills to
+          impact real lives.
+        </p>
+      </Col>
+
+
     <Col md="5">
       <div className="involved-container">
         <h3 className="text-title text-center">Developers</h3>
@@ -20,7 +34,7 @@ const InvolveSection = () => (
           style={{
             padding: '38px 0 35px 0',
           }}>
-          Are you passionate about software and Social Impact? Are you looking to join a unique and
+          PLACEHOLDER: Are you passionate about software and Social Impact? Are you looking to join a unique and
           close-knit community? Join Us! Our mission provides a distinct experience to develop
           technical skills and interact with nonprofit clients all while applying your skills to
           impact real lives.
@@ -46,7 +60,7 @@ const InvolveSection = () => (
           style={{
             padding: '38px 0 35px 0',
           }}>
-          Are you passionate about software and Social Impact? Are you looking to join a unique and
+          PLACEHOLDER: Are you passionate about software and Social Impact? Are you looking to join a unique and
           close-knit community? Join Us! Our mission provides a distinct experience to develop
           technical skills and interact with nonprofit clients all while applying your skills to
           impact real lives.
