@@ -1,12 +1,11 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
-import BlockQuote from './blockQuote';
 import ActionButton from './actionButton';
 import Link from 'next/link';
+import Faq from './faq';
 
 const InvolveSection = () => (
   <Row>
-
     <Col md="12" className="text-center">
           <h2 className="project-detail-title"> Applications will reopen at the start of Fall 2021. </h2>
     </Col>
@@ -66,7 +65,7 @@ const InvolveSection = () => (
           impact real lives.
         </p>
 
-        <div className="text-center">
+        <div className="text-center ">
           <ActionButton white link="/apply/students">
             Apply
           </ActionButton>
@@ -74,6 +73,11 @@ const InvolveSection = () => (
       </Row>
       </div>
     </Col>
+
+    <Col md="12" className="text-center">
+          <h2 className="project-detail-title"> Applications will reopen at the start of Fall 2021. </h2>
+    </Col>
+
     <style jsx>{`
       img {
         display: block;
