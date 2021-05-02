@@ -8,11 +8,6 @@ import Section from '../../components/section';
 import { Container } from 'reactstrap';
 
 function ApplyPage({
-  applicationLink,
-  openRolesLink,
-  description,
-  timelineCollection,
-  testimonialsCollection,
   faqsCollection,
 }) {
   return (
