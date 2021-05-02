@@ -177,7 +177,7 @@ function ProjectTechUsed({ technologiesUsed }) {
     <Section>
       <Container>
         <h2 className="project-detail-title text-center mb-5"> Tech Stack </h2>
-        <Row className="d-flex justify-content-center">
+        {/* <Row className="d-flex justify-content-center">
           {technologiesUsed.map((tech) => (
             <Col md="2" xs="6" key={tech}>
               <Card className="border-0">
@@ -194,7 +194,7 @@ function ProjectTechUsed({ technologiesUsed }) {
               </Card>
             </Col>
           ))}
-        </Row>
+        </Row> */}
         <style jsx>{`
           .tech-stack {
             margin-top: 20px;

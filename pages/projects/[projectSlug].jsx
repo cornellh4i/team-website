@@ -57,7 +57,7 @@ function ProjectPage({
           </Col>
         </Row>
       </section>
-      <FeatureSlider features={featuresCollection.items} />
+      {/* <FeatureSlider features={featuresCollection.items} /> */}
       <ProjectTechUsed technologiesUsed={technologiesUsed.split(',').map((t) => t.trim())} />
       {testimonialsCollection.items.map(({ author, quote }) => {
         const [authorName, authorTitle] = author.split(',');
