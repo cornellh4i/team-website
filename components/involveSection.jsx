@@ -4,7 +4,7 @@ import ActionButton from './actionButton';
 import Link from 'next/link';
 import Faq from './faq';
 
-const InvolveSection = () => (
+const InvolveSection = ({faqsCollection}) => (
   <Row>
     <Col md="12" className="text-center">
           <h2 className="project-detail-title"> Applications will reopen at the start of Fall 2021. </h2>
@@ -22,7 +22,7 @@ const InvolveSection = () => (
     <Col md="5">
       <div className="involved-container">
         <h3 className="text-title text-center">Developers</h3>
-        <Link href="/apply/students">
+        <Link href="#">
           <a>
             <img src="/images/h4i-funny.jpg" className="img-fluid" alt="Sp18 team" />
           </a>
@@ -40,7 +40,7 @@ const InvolveSection = () => (
         </p>
 
         <div className="text-center">
-          <ActionButton white link="/apply/students">
+          <ActionButton white link="#">
             Apply
           </ActionButton>
         </div>
@@ -49,7 +49,7 @@ const InvolveSection = () => (
     <Col md="5" className="offset-md-2">
       <div className="involved-container">
         <h3 className="text-title text-center">Designers</h3>
-        <Link href="/apply/nonprofits">
+        <Link href="#">
           <a>
             <img src="/images/team-cheer.jpg" className="img-fluid" alt="Fa19 team" />
           </a>
@@ -66,7 +66,7 @@ const InvolveSection = () => (
         </p>
 
         <div className="text-center ">
-          <ActionButton white link="/apply/students">
+          <ActionButton white link="#">
             Apply
           </ActionButton>
         </div>
@@ -74,10 +74,7 @@ const InvolveSection = () => (
       </div>
     </Col>
 
-    <Col md="12" className="text-center">
-          <h2 className="project-detail-title"> Applications will reopen at the start of Fall 2021. </h2>
-    </Col>
-
+    {faqsCollection?.items?.length > 0 && <Faq questions={faqsCollection.items} />}
     <style jsx>{`
       img {
         display: block;
