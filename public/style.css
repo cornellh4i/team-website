@@ -98,6 +98,13 @@ section {
   margin-right: 0px !important;
 }
 
+.page-title {
+  color: red;
+  padding-top: 7%;
+  font-size: 40px;
+  font-weight: 400;
+}
+
 .section-title {
   font-size: 30px;
   margin-bottom: 25px;

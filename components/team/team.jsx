@@ -1,12 +1,20 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import DirectorQuotes from './DirectorQuotes';
 import MemberIcon from '../memberIcon';
 
-function Team({ directorQuotes, members, alumni }) {
+function Team({ members, alumni }) {
   return (
     <Container>
-      <DirectorQuotes content={directorQuotes} />
+      <Row>
+        <Col md="12" className="text-center">
+          <h2 className="page-title"> Meet Our Team </h2>
+          <p>
+            At Hack4Impact Cornell, we're fortunate to have a passionate and talented group of
+            software developers, designers, and organizers who help turn our vision into a reality.
+          </p>
+        </Col>
+      </Row>
+      <hr size="3" width="60%" color="blue"></hr>
       <Row>
         <Col md="12" className="text-center">
           <h2> Executive Board </h2>
@@ -31,6 +39,7 @@ function Team({ directorQuotes, members, alumni }) {
             within our Cornell chapter and with chapters nationally. Join us and start learning more
             about how technology can be used for social impact!
           </p>
+          <p>&nbsp;</p>
         </Col>
         {members.map((member) => (
           <MemberIcon
@@ -52,6 +61,7 @@ function Team({ directorQuotes, members, alumni }) {
             within our Cornell chapter and with chapters nationally. Join us and start learning more
             about how technology can be used for social impact!
           </p>
+          <p>&nbsp;</p>
         </Col>
         {members.map((member) => (
           <MemberIcon
@@ -73,6 +83,7 @@ function Team({ directorQuotes, members, alumni }) {
             within our Cornell chapter and with chapters nationally. Join us and start learning more
             about how technology can be used for social impact!
           </p>
+          <p>&nbsp;</p>
         </Col>
         {members.map((member) => (
           <MemberIcon
