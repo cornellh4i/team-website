@@ -17,12 +17,6 @@ function Home({ chapterLogos, previewProjects }) {
       <ToastContainer />
       <Banner />
       <OurWorkSection projects={previewProjects} />
-      <Section grey>
-        <Container>
-          <h2 className="text-center">Get Involved</h2>
-          <InvolveSection />
-        </Container>
-      </Section>
       <PartnerSection />
       <OtherChapters chapterLogos={chapterLogos} />
     </>

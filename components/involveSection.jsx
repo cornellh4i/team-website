@@ -1,15 +1,28 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
-import BlockQuote from './blockQuote';
 import ActionButton from './actionButton';
 import Link from 'next/link';
+import Faq from './faq';
 
-const InvolveSection = () => (
+const InvolveSection = ({faqsCollection}) => (
   <Row>
+    <Col md="12" className="text-center">
+          <h2 className="project-detail-title"> Applications will reopen at the start of Fall 2021. </h2>
+    </Col>
+    <Col md="12" className="text-center">
+        <p className="mission-body-text">
+          Are you passionate about software and social impact? Are you looking to join a unique and
+          close-knit community? Join Us! Our mission provides a distinct experience to develop
+          technical skills and interact with nonprofit clients all while applying your skills to
+          impact real lives.
+        </p>
+      </Col>
+
+
     <Col md="5">
       <div className="involved-container">
-        <h3 className="text-title text-center">Students</h3>
-        <Link href="/apply/students">
+        <h3 className="text-title text-center">Developers</h3>
+        <Link href="#">
           <a>
             <img src="/images/h4i-funny.jpg" className="img-fluid" alt="Sp18 team" />
           </a>
@@ -20,44 +33,48 @@ const InvolveSection = () => (
           style={{
             padding: '38px 0 35px 0',
           }}>
-          Are you passionate about software and Social Impact? Are you looking to join a unique and
+          PLACEHOLDER: Are you passionate about software and Social Impact? Are you looking to join a unique and
           close-knit community? Join Us! Our mission provides a distinct experience to develop
           technical skills and interact with nonprofit clients all while applying your skills to
           impact real lives.
         </p>
 
         <div className="text-center">
-          <ActionButton white link="/apply/students">
-            Learn More
+          <ActionButton white link="#">
+            Apply
           </ActionButton>
         </div>
       </Row>
     </Col>
     <Col md="5" className="offset-md-2">
       <div className="involved-container">
-        <h3 className="text-title text-center">Nonprofits</h3>
-        <Link href="/apply/nonprofits">
+        <h3 className="text-title text-center">Designers</h3>
+        <Link href="#">
           <a>
             <img src="/images/team-cheer.jpg" className="img-fluid" alt="Fa19 team" />
           </a>
         </Link>
         <Row>
-          <BlockQuote
-            text="Working with Hack4Impact was easy, efficient and incredibly
-              productive. They were quick to understand what we were looking to
-              achieve and made the app even better and simpler to use than what
-              I had imagined."
-            author="- Bernardo H. Motta, Ph.D."
-            position="Faculty Coordinator of the USFSP Neighborhood News Bureau"
-          />
-          <div className="text-center">
-            <ActionButton white link="/apply/nonprofits">
-              Learn More
-            </ActionButton>
-          </div>
-        </Row>
+        <p
+          style={{
+            padding: '38px 0 35px 0',
+          }}>
+          PLACEHOLDER: Are you passionate about software and Social Impact? Are you looking to join a unique and
+          close-knit community? Join Us! Our mission provides a distinct experience to develop
+          technical skills and interact with nonprofit clients all while applying your skills to
+          impact real lives.
+        </p>
+
+        <div className="text-center ">
+          <ActionButton white link="#">
+            Apply
+          </ActionButton>
+        </div>
+      </Row>
       </div>
     </Col>
+
+    {faqsCollection?.items?.length > 0 && <Faq questions={faqsCollection.items} />}
     <style jsx>{`
       img {
         display: block;
