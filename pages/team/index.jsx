@@ -12,7 +12,7 @@ function TeamPage({ members, alumni }) {
         style={{
           backgroundImage:
             'url(' +
-            'https://www.designscapescolorado.com/wp_uploads/2014/08/dog-in-landscape.jpg' +
+            'https://greatpeopleinside.com/wp-content/uploads/2019/11/team-building-1030x579.jpg' +
             ')',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
