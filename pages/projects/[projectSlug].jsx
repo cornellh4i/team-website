@@ -27,7 +27,9 @@ function ProjectPage({
     <>
       <Head title={title} />
       <GradientBanner title={title} subHeadline={description}>
-        {/* {finalProductLink && (
+        {
+        /* {finalProductLink && (
+          
           <ActionButton className="mr-3" link={finalProductLink}>
             Try our final product
           </ActionButton>

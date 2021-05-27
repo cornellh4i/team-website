@@ -9,15 +9,16 @@ function TeamPage({ members, alumni }) {
     <>
       <Head title="Apply" />
       <GradientBanner
-        style={{
-          backgroundImage:
-            'url(' +
-            'https://greatpeopleinside.com/wp-content/uploads/2019/11/team-building-1030x579.jpg' +
-            ')',
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-        }}
+        // style={{
+        //   backgroundImage:
+        //     'url(' +
+        //     'https://greatpeopleinside.com/wp-content/uploads/2019/11/team-building-1030x579.jpg' +
+        //     ')',
+        //   backgroundPosition: 'center',
+        //   backgroundSize: 'cover',
+        //   backgroundRepeat: 'no-repeat',
+        // }}
+        arrow
         title="Our Team"
         subHeadline="At Hack4Impact Cornell, we're fortunate to have a passionate and talented group of 
         software developers, designers, and organizers who help turn our vision into a reality."

@@ -58,10 +58,6 @@ const GradientBanner = ({ title, subHeadline, style, arrow, children }) => (
     <style jsx>{`
       $tablet-width: 800px;
 
-      h1 {
-        color: #df2323;
-      }
-
       section {
         background: linear-gradient(white, var(--secondary-seafoam));
         padding: 80px 0;
