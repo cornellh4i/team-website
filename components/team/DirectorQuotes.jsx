@@ -8,7 +8,7 @@ function DirectorQuotes({ content }) {
     <Section>
       <Row>
         <div className="text-center section-title">
-          <h2>Our Team</h2>
+          <h2>Meet Our Team</h2>
         </div>
       </Row>
 

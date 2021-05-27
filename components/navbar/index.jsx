@@ -37,6 +37,9 @@ function Nav() {
             <NavLink activeRoute={activeRoute} href="/about">
               About Us
             </NavLink>
+            <NavLink activeRoute={activeRoute} href="/team">
+              Our Team
+            </NavLink>
             <NavLink activeRoute={activeRoute} href="/projects">
               Our Work
             </NavLink>
