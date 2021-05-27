@@ -96,7 +96,7 @@ function Nav() {
           }
           :global(a, a:visited) {
             display: inline-block;
-            color: red;
+            color: var(--primary-dark);
             text-decoration: none;
             padding: 10px 20px;
             border-radius: 5px;
