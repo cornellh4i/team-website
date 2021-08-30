@@ -1,20 +1,30 @@
-import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import MemberIcon from '../memberIcon';
+import groupBy from '../../utils/groupBy';
 
-function Team({ members, alumni }) {
+export default function TeamList({ members }) {
+  const teamByPosition = groupBy(members, 'title');
   return (
     <Container>
-      <Row>
-        <Col md="12" className="text-center">
-          <h2 className="page-title"> Meet Our Team </h2>
-          <p>
-            At Hack4Impact Cornell, we're fortunate to have a passionate and talented group of
-            software developers, designers, and organizers who help turn our vision into a reality.
-          </p>
-        </Col>
-      </Row>
-      <hr size="3" width="60%" color="blue"></hr>
+      {Object.entries(teamByPosition).map(([title, members]) => (
+        <div key={title}>
+          <Col>
+            <h2 className="section-title center">{title}</h2>
+          </Col>
+          <Row>
+            {members.map((member) => (
+              <MemberIcon
+                key={member.name}
+                name={member.name}
+                title={member.title}
+                image={member.image}
+                linkedIn={member.linkedIn}
+              />
+            ))}
+          </Row>
+        </div>
+      ))}
+
       <Row>
         <Col md="12" className="text-center">
           <h2> Executive Board </h2>
@@ -95,20 +105,6 @@ function Team({ members, alumni }) {
           />
         ))}
       </Row>
-      <h2 className="p-5 m-3 center"> Alumni </h2>
-      <Row>
-        {alumni.map((member) => (
-          <MemberIcon
-            key={member.name}
-            name={member.name}
-            title={member.title}
-            image={member.image}
-            linkedIn={member.linkedIn}
-          />
-        ))}
-      </Row>
     </Container>
   );
 }
-
-export default Team;
