@@ -40,10 +40,12 @@ function Nav() {
             <NavLink activeRoute={activeRoute} href="/projects">
               Our Work
             </NavLink>
+            <NavLink activeRoute={activeRoute} href="/team">
+              Our Team
+            </NavLink>
             <NavLink activeRoute={activeRoute} href="/apply">
               Apply
             </NavLink>
-            <a href="mailto:cornell@hack4impact.org">Contact Us</a>
           </div>
         </nav>
       </header>

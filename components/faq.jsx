@@ -12,6 +12,11 @@ export default function Faq({ questions }) {
           <FaqQuestion question={question} answer={answer} key={question} />
         ))}
       </Container>
+      <style jsx>{`
+      .section-title {
+        text-align: center;
+      }
+    `}</style>
     </Section>
   );
 }

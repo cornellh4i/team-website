@@ -27,14 +27,16 @@ function ProjectPage({
     <>
       <Head title={title} />
       <GradientBanner title={title} subHeadline={description}>
-        {finalProductLink && (
+        {
+        /* {finalProductLink && (
+          
           <ActionButton className="mr-3" link={finalProductLink}>
             Try our final product
           </ActionButton>
-        )}
+        )} */}
         {codeRepoLink && (
           <ActionButton white link={codeRepoLink}>
-            See our code
+            Our Code
           </ActionButton>
         )}
       </GradientBanner>
@@ -57,8 +59,8 @@ function ProjectPage({
           </Col>
         </Row>
       </section>
-      <FeatureSlider features={featuresCollection.items} />
-      <ProjectTechUsed technologiesUsed={technologiesUsed.split(',').map((t) => t.trim())} />
+      {/* <FeatureSlider features={featuresCollection.items} /> */}
+      {/* <ProjectTechUsed technologiesUsed={technologiesUsed.split(',').map((t) => t.trim())} /> */}
       {testimonialsCollection.items.map(({ author, quote }) => {
         const [authorName, authorTitle] = author.split(',');
         return (
@@ -70,7 +72,7 @@ function ProjectPage({
           />
         );
       })}
-      <Team members={teamMembersCollection.items} />
+      {/* <Team members={teamMembersCollection.items} /> */}
       <Row className="d-flex justify-content-center mb-5">
         <ActionButton white link="/projects">
           See more of our projects

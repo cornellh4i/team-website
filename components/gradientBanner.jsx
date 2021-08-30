@@ -78,6 +78,8 @@ const GradientBanner = ({ title, subHeadline, style, arrow, children }) => (
         }
       }
       .sub-headline {
+        color: #129edf;
+        font-weight: bold;
         max-width: 100%;
         padding: 0 10%;
         margin-top: 20px;
