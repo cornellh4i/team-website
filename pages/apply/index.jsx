@@ -3,16 +3,14 @@ import Faq from '../../components/faq';
 import GradientBanner from '../../components/gradientBanner';
 import Head from '../../components/head';
 import fetchContent from '../../utils/fetchContent';
-import InvolveSection from '../../components/involveSection';
+import InvolveSection from '../../components/apply/involveSection';
 import Section from '../../components/section';
 import { Container } from 'reactstrap';
 
-function ApplyPage({
-  faqsCollection,
-}) {
+function ApplyPage({ faqsCollection }) {
   return (
     <>
-     <Head title="Apply" />
+      <Head title="Apply" />
       <GradientBanner
         title="Apply"
         subHeadline="We're open to developers and designers of all backgrounds! Recruitment occurs in the beginning of the Fall and Spring Semester."

@@ -1,23 +1,25 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
-import ActionButton from './actionButton';
+import ActionButton from '../actionButton';
 import Link from 'next/link';
-import Faq from './faq';
+import Faq from '../faq';
 
-const InvolveSection = ({faqsCollection}) => (
+const InvolveSection = ({ faqsCollection }) => (
   <Row>
     <Col md="12" className="text-center">
-          <h2 className="project-detail-title"> Applications will reopen at the start of Fall 2021. </h2>
+      <h2 className="project-detail-title">
+        {' '}
+        Applications will reopen at the start of Fall 2021.{' '}
+      </h2>
     </Col>
     <Col md="12" className="text-center">
-        <p className="mission-body-text">
-          Are you passionate about software and social impact? Are you looking to join a unique and
-          close-knit community? Join Us! Our mission provides a distinct experience to develop
-          technical skills and interact with nonprofit clients all while applying your skills to
-          impact real lives.
-        </p>
-      </Col>
-
+      <p className="mission-body-text">
+        Are you passionate about software and social impact? Are you looking to join a unique and
+        close-knit community? Join Us! Our mission provides a distinct experience to develop
+        technical skills and interact with nonprofit clients all while applying your skills to
+        impact real lives.
+      </p>
+    </Col>
 
     <Col md="5">
       <div className="involved-container">
@@ -33,10 +35,8 @@ const InvolveSection = ({faqsCollection}) => (
           style={{
             padding: '38px 0 35px 0',
           }}>
-          PLACEHOLDER: Are you passionate about software and Social Impact? Are you looking to join a unique and
-          close-knit community? Join Us! Our mission provides a distinct experience to develop
-          technical skills and interact with nonprofit clients all while applying your skills to
-          impact real lives.
+          Interested in developing products for social good that benefit organizations in your
+          community? Apply to Hack4Impact's development team!
         </p>
 
         <div className="text-center">
@@ -55,22 +55,20 @@ const InvolveSection = ({faqsCollection}) => (
           </a>
         </Link>
         <Row>
-        <p
-          style={{
-            padding: '38px 0 35px 0',
-          }}>
-          PLACEHOLDER: Are you passionate about software and Social Impact? Are you looking to join a unique and
-          close-knit community? Join Us! Our mission provides a distinct experience to develop
-          technical skills and interact with nonprofit clients all while applying your skills to
-          impact real lives.
-        </p>
+          <p
+            style={{
+              padding: '38px 0 35px 0',
+            }}>
+            Interested in designing projects for a wide variety of applications and real partners?
+            Apply to Hack4Impact's design team!
+          </p>
 
-        <div className="text-center ">
-          <ActionButton white link="#">
-            Apply
-          </ActionButton>
-        </div>
-      </Row>
+          <div className="text-center ">
+            <ActionButton white link="https://bit.ly/h4i-design21">
+              Apply
+            </ActionButton>
+          </div>
+        </Row>
       </div>
     </Col>
 
