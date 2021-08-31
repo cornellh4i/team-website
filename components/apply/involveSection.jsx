@@ -40,7 +40,7 @@ const InvolveSection = ({ faqsCollection }) => (
         </p>
 
         <div className="text-center">
-          <ActionButton white link="#">
+          <ActionButton white link="https://bit.ly/h4i-dev21">
             Apply
           </ActionButton>
         </div>
