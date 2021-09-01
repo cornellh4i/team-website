@@ -30,7 +30,7 @@ function OurWorkSection({ projects }) {
                 Each semester, we work with three non-profits with the opportunity to build a great
                 product that solves a core need. We work in small groups led by a product manager
                 and technical lead to scope and develop the application, taking into account our
-                clients’ requirements and suggestions
+                clients’ requirements and suggestions.
               </p>
             </div>
           )}
