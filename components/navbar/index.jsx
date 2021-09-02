@@ -46,6 +46,9 @@ function Nav() {
             <NavLink activeRoute={activeRoute} href="/apply">
               Apply
             </NavLink>
+            <NavLink activeRoute={activeRoute} href="https://medium.com/cornellh4i">
+              Blog
+            </NavLink>
           </div>
         </nav>
       </header>

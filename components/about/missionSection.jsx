@@ -34,7 +34,7 @@ const MissionSection = () => (
               <img
                 alt="Fall 2019 team"
                 style={props}
-                src="/images/fa19-team.jpg"
+                src="/images/CornellH4i4.jpg"
                 className="shadow"
                 id="mission-team"
               />

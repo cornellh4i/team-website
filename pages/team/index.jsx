@@ -1,7 +1,6 @@
 import React from 'react';
 import GradientBanner from '../../components/gradientBanner';
 import Head from '../../components/head';
-import TeamIntroduction from '../../components/team/teamIntroduction';
 import TeamList from '../../components/team/teamList';
 import Alumni from '../../components/team/alumni';
 import fetchContent from '../../utils/fetchContent';
@@ -25,7 +24,7 @@ function TeamPage({ members, alumni }) {
         subHeadline="At Hack4Impact Cornell, we're fortunate to have a passionate and talented group of 
         software developers, designers, and organizers who help turn our vision into a reality."
       />
-      <TeamIntroduction />
+      <p>&nbsp;</p>
       <TeamList members={members} />
       <Alumni alumni={alumni} />
     </>
@@ -46,6 +45,9 @@ export async function getStaticProps() {
       url
     }
     linkedIn
+    description { 
+      json
+    }
   } 
   
   {

@@ -27,10 +27,10 @@ function OurWorkSection({ projects }) {
             <div style={props} id="our-work-title-box">
               <h2 className="title text-center">We believe in using tech for good.</h2>
               <p className="subtitle text-center">
-                Each semester, we work with three to five non-profits with the opportunity to build
-                a great product that solves a core need. We work in small groups led by a product
-                manager and technical lead to scope and develop the application, taking into account
-                our clients’ requirements and suggestions
+                Each semester, we work with three non-profits with the opportunity to build a great
+                product that solves a core need. We work in small groups led by a product manager
+                and technical lead to scope and develop the application, taking into account our
+                clients’ requirements and suggestions.
               </p>
             </div>
           )}
