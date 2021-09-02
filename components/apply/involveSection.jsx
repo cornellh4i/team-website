@@ -23,7 +23,7 @@ const InvolveSection = ({ faqsCollection }) => (
         <h3 className="text-title text-center">Developers</h3>
         <Link href="#">
           <a>
-            <img src="/images/h4i-funny.jpg" className="img-fluid" alt="Sp18 team" />
+            <img src="/images/CornellH4i2.jpg" className="img-fluid" alt="Sp18 team" />
           </a>
         </Link>
       </div>
@@ -48,7 +48,7 @@ const InvolveSection = ({ faqsCollection }) => (
         <h3 className="text-title text-center">Designers</h3>
         <Link href="#">
           <a>
-            <img src="/images/team-cheer.jpg" className="img-fluid" alt="Fa19 team" />
+            <img src="/images/CornellH4i3.jpg" className="img-fluid" alt="Fa19 team" />
           </a>
         </Link>
         <Row>

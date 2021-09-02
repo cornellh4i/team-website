@@ -40,9 +40,9 @@ export default function TeamList({ members }) {
 
 function RoleDescription({ title }) {
   if (title === 'Developers') {
-    return "PLACEHOLDER: As the Cornell Developers, a 501 (c)(3) nonprofit, we strive to create software that can deliver tangible social impact in our communities and make a real difference in people's lives. We're as an organization, are focused on community, both within our Cornell chapter and with chapters nationally. Join us and start learning more about how technology can be used for social impact!";
+    return '';
   } else if (title === 'Designers') {
-    return "PLACEHOLDER: As the Cornell Designers, a 501 (c)(3) nonprofit, we strive to create software that can deliver tangible social impact in our communities and make a real difference in people's lives. We're as an organization, are focused on community, both within our Cornell chapter and with chapters nationally. Join us and start learning more about how technology can be used for social impact!";
+    return '';
   }
   return '';
 }
