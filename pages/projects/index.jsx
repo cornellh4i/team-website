@@ -2,7 +2,7 @@ import React from 'react';
 import Head from '../../components/head';
 import GradientBanner from '../../components/gradientBanner';
 import ProjectList from '../../components/projects/projectList';
-import ProjectExplore from '../../components/projects/projectExplore';
+import ProjectExplore from '../../components/unused/projectExplore';
 import fetchContent from '../../utils/fetchContent';
 import ActionButton from '../../components/actionButton';
 
@@ -28,7 +28,6 @@ function Projects({ projects }) {
         <ActionButton link="https://medium.com/cornellh4i">See our Blog</ActionButton>
       </GradientBanner>
       <ProjectList projects={projects} />
-      <ProjectExplore />
     </div>
   );
 }
