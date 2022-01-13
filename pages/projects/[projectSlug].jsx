@@ -27,21 +27,24 @@ function ProjectPage({
     <>
       <Head title={title} />
       <GradientBanner title={title} subHeadline={description}>
-        {/* {finalProductLink && (
-          
-          <ActionButton className="mr-3" link={finalProductLink}>
-            Try our final product
-          </ActionButton>
-        )} */}
         {codeRepoLink && (
-          <ActionButton white link={codeRepoLink}>
+          <ActionButton className="mr-3" white link={codeRepoLink}>
             Our Code
+          </ActionButton>
+        )}
+        {finalProductLink && (
+          <ActionButton white link={finalProductLink}>
+            Read In Detail
           </ActionButton>
         )}
       </GradientBanner>
       <section className="pt-0">
         <Row className="d-flex justify-content-center mb-5">
-          <img className="thumbnail" src={thumbnail.url} alt={thumbnail.description} />
+          <img
+            className="thumbnail"
+            src={featuresCollection.items[0].image.url}
+            alt={thumbnail.description}
+          />
         </Row>
         <Row className="d-flex justify-content-center">
           <Col lg="4" md="6">
