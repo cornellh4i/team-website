@@ -31,13 +31,22 @@ const MissionSection = () => (
           to={{ transform: 'translate3d(0,0,0)' }}>
           {(props) => (
             <div className="text-center img-holder">
-              <img
-                alt="Fall 2019 team"
-                style={props}
-                src="/images/CornellH4i4.jpg"
-                className="shadow"
-                id="mission-team"
-              />
+              <Row>
+                <img
+                  alt="Spring 2021 team dinner"
+                  style={props}
+                  src="/images/CornellH4i4.jpg"
+                  className="shadow"
+                  id="mission-team"
+                />
+                <img
+                  alt="Fall 2021 team"
+                  style={props}
+                  src="/images/CornellH4i4.jpg"
+                  className="shadow"
+                  id="mission-team"
+                />
+              </Row>
             </div>
           )}
         </Spring>

@@ -20,7 +20,7 @@ function Footer() {
               .
             </p>
           </Col>
-          <div className="col-md-1" />
+          <div className="col-md-2" />
           <div className="col-md-2 ">
             <h4>About the org</h4>
             <ul>
@@ -34,24 +34,14 @@ function Footer() {
                   <a>Projects</a>
                 </Link>
               </li>
-            </ul>
-          </div>
-          <div className="col-md-2">
-            <h4>Apply Now</h4>
-            <ul>
+              <li>
+                <Link href="/team">
+                  <a>Our Team</a>
+                </Link>
+              </li>
               <li>
                 <Link href="/apply">
                   <a>How to apply</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/apply/students">
-                  <a>Students</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/apply/nonprofits">
-                  <a>Non-profits</a>
                 </Link>
               </li>
             </ul>
@@ -68,9 +58,6 @@ function Footer() {
               </li>
               <li>
                 <a href="https://medium.com/hack4impact">Blog</a>
-              </li>
-              <li>
-                <a href="mailto:cornell@hack4impact.org">Email</a>
               </li>
               <li>
                 <a href="https://www.notion.so/h4i/Hack4Impact-Cornell-9aef6a734fb149aba896ae8866e736b7">
