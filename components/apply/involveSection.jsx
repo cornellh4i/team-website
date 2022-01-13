@@ -21,11 +21,9 @@ const InvolveSection = ({ faqsCollection }) => (
     <Col md="5">
       <div className="involved-container">
         <h3 className="text-title text-center">Developers</h3>
-        <Link href="#">
-          <a>
-            <img src="/images/CornellH4i2.jpg" className="img-fluid" alt="Sp18 team" />
-          </a>
-        </Link>
+        <a>
+          <img src="/images/CornellH4i2.jpg" className="img-fluid" alt="Hack4Impact Developers" />
+        </a>
       </div>
       <Row>
         <p
@@ -46,11 +44,9 @@ const InvolveSection = ({ faqsCollection }) => (
     <Col md="5" className="offset-md-2">
       <div className="involved-container">
         <h3 className="text-title text-center">Designers</h3>
-        <Link href="#">
-          <a>
-            <img src="/images/CornellH4i3.jpg" className="img-fluid" alt="Fa19 team" />
-          </a>
-        </Link>
+        <a>
+          <img src="/images/Designers.png" className="img-fluid" alt="Hack4Impact Designers" />
+        </a>
         <Row>
           <p
             style={{

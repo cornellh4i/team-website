@@ -3,7 +3,6 @@
 */
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { Spring } from 'react-spring/renderprops.cjs';
 
 const MissionSection = () => (
   <section className="mission-section">
@@ -26,45 +25,24 @@ const MissionSection = () => (
         </Col>
       </Row>
       <Row>
-        <Spring
-          from={{ transform: 'translate3d(0,300px,0)' }}
-          to={{ transform: 'translate3d(0,0,0)' }}>
-          {(props) => (
-            <div className="text-center img-holder">
-              <Row>
-                <img
-                  alt="Spring 2021 team dinner"
-                  style={props}
-                  src="/images/CornellH4i4.jpg"
-                  className="shadow"
-                  id="mission-team"
-                />
-                <img
-                  alt="Fall 2021 team"
-                  style={props}
-                  src="/images/CornellH4i4.jpg"
-                  className="shadow"
-                  id="mission-team"
-                />
-              </Row>
-            </div>
-          )}
-        </Spring>
+        <div className="left-image">
+          <img src="/images/CornellH4i4.jpg" className="img-fluid" alt="Hack4Impact Team" />
+        </div>
+        <div className="right-image">
+          <img src="/images/TeamPhoto.png" className="img-fluid" alt="Hack4Impact Team" />
+        </div>
       </Row>
     </Container>
     <style jsx>{`
-      @media (max-width: 768px) {
-        #mission-team {
-          width: 100%;
-        }
-        .img-holder {
-          overflow: hidden;
-          max-width: 100%;
-        }
+      .left-image {
+        width: 50%;
+        left: 0px;
+        height: 100%;
       }
-      #mission-team {
-        max-width: 700px;
-        margin-top: 30px;
+      .right-image {
+        width: 50%;
+        right: 0px;
+        height: 100%;
       }
       .mission-body-text {
         color: #323648;
