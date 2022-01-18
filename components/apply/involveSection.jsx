@@ -63,8 +63,8 @@ const InvolveSection = ({ faqsCollection }) => (
             style={{
               padding: '38px 0 35px 0',
             }}>
-            Interested in working with Hack4Impact to promote innovation and social good! Apply to
-            Hack4Impact's external management team!
+            Interested in product research, marketing, finance, and innovation in the tech and
+            social good space? Apply to Hack4Impact's external team!
           </p>
         </Row>
       </div>
