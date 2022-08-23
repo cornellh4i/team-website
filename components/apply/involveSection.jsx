@@ -87,16 +87,18 @@ const InvolveSection = ({ faqsCollection }) => (
     <Col md="12" className="text-center">
       <h2 className="project-detail-title"> Application Timeline </h2>
     </Col>
+    <Row>
     <Col md="12" className="text-center">
       <p className="mission-body-text">
-      Info Session 1: Aug 25, 5:00PM - 6:00PM
-      Info Session 2: Aug 30, 5:30PM - 6:30PM
-      <b>Sophomore, Junior, Senior Applications Due:</b> Sep 1, 11:59PM
-      Info Session 3: Sep 14, 6PM-7PM
-      Info Session 4: Sep 22, 5:30PM-6:30PM
-      <b>First-Year Applications Due:</b> Sep 29, 11:59PM
+      <br>Info Session 1: Aug 25, 5:00PM - 6:00PM</br>
+      <br>Info Session 2: Aug 30, 5:30PM - 6:30PM</br>
+      <br><b>Sophomore, Junior, Senior Applications Due:</b> Sep 1, 11:59PM</br
+      <br>Info Session 3: Sep 14, 6PM-7PM</br>
+      <br>Info Session 4: Sep 22, 5:30PM-6:30PM</br>
+      <br><b>First-Year Applications Due:</b> Sep 29, 11:59PM</br>
       </p>
     </Col>
+    </Row>
 
     {faqsCollection?.items?.length > 0 && <Faq questions={faqsCollection.items} />}
     <style jsx>{`
