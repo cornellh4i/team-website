@@ -100,10 +100,10 @@ const InvolveSection = ({ faqsCollection }) => (
       <p className="mission-body-text">
       <Row>Info Session 1: Aug 25, 5:00PM - 6:00PM</Row>
       <Row>Info Session 2: Aug 30, 5:30PM - 6:30PM</Row>
-      <Row><b>Sophomore, Junior, Senior Applications Due:</b> Sep 1, 11:59PM</Row>
+      <Row><b>Sophomore, Junior, Senior Applications Due: </b> Sep 1, 11:59PM</Row>
       <Row>Info Session 3: Sep 14, 6PM-7PM</Row>
       <Row>Info Session 4: Sep 22, 5:30PM-6:30PM</Row>
-      <Row><b>First-Year Applications Due:</b> Sep 29, 11:59PM</Row>
+      <Row><b>First-Year Applications Due: </b> Sep 29, 11:59PM</Row>
       </p>
     </Col>
     </Row>
