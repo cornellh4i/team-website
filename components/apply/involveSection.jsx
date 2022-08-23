@@ -69,7 +69,7 @@ const InvolveSection = ({ faqsCollection }) => (
         </Row>
       </div>
     </Col>
-    <hr size="3" width="40%" color="blue"></hr>
+    <hr size="3" width="80%" color="blue"></hr>
     <div className="text-center ">
       <ActionButton
         teal
@@ -77,8 +77,6 @@ const InvolveSection = ({ faqsCollection }) => (
         Apply: First-Year Students
       </ActionButton>
     </div>
-    <hr size="3" width="40%" color="blue"></hr>
-    <hr size="3" width="40%" color="blue"></hr>
     <div className="text-center ">
       <ActionButton
         teal
@@ -86,7 +84,7 @@ const InvolveSection = ({ faqsCollection }) => (
         Apply: All Other Students
       </ActionButton>
     </div>
-    <hr size="3" width="40%" color="blue"></hr>
+    <hr size="3" width="80%" color="blue"></hr>
 
     {faqsCollection?.items?.length > 0 && <Faq questions={faqsCollection.items} />}
     <style jsx>{`
