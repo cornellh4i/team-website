@@ -64,7 +64,7 @@ const InvolveSection = ({ faqsCollection }) => (
               padding: '38px 0 35px 0',
             }}>
             Interested in product research, marketing, finance, and innovation in the tech and
-            social good space? Apply to Hack4Impact's external team!
+            social good space? Apply to Hack4Impact's business team!
           </p>
         </Row>
       </div>
@@ -72,9 +72,18 @@ const InvolveSection = ({ faqsCollection }) => (
     <hr size="3" width="40%" color="blue"></hr>
     <div className="text-center ">
       <ActionButton
-        white
-        link="https://docs.google.com/forms/d/e/1FAIpQLSdRkId9BuVW752QhT46CmCTqatpsC6IgliYgHnBRlzzWKcHUQ/viewform">
-        Apply
+        teal
+        link="http://bit.ly/h4i-fa22-firstyears">
+        Apply: First-Year Students
+      </ActionButton>
+    </div>
+    <hr size="3" width="40%" color="blue"></hr>
+    <hr size="3" width="40%" color="blue"></hr>
+    <div className="text-center ">
+      <ActionButton
+        teal
+        link="http://bit.ly/h4i-fa22-upperclassmen">
+        Apply: All Other Students
       </ActionButton>
     </div>
     <hr size="3" width="40%" color="blue"></hr>
