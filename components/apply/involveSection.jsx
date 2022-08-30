@@ -84,9 +84,12 @@ const InvolveSection = ({ faqsCollection }) => (
       </ActionButton>
     </div>
     <Col md="12" className="text-center">
-      <p className="mission-body-text">
-        All applicants must also complete the General Project Team Application below:
-      </p>
+    <p
+      style={{
+        padding: '38px 0 35px 0',
+      }}>
+      All applicants must also complete the general project team application below:
+    </p>
     </Col>
     <div className="text-center ">
       <ActionButton
