@@ -73,14 +73,26 @@ const InvolveSection = ({ faqsCollection }) => (
       <ActionButton
         teal
         link="http://bit.ly/h4i-fa22-firstyears">
-        Apply: First-Year Students
+        Apply: First-Years & Transfers
       </ActionButton>
     </div>
     <div className="text-center ">
       <ActionButton
         teal
         link="http://bit.ly/h4i-fa22-upperclassmen">
-        Apply: All Other Students
+        Apply: Upperclassmen
+      </ActionButton>
+    </div>
+    <Col md="12" className="text-center">
+      <p className="mission-body-text">
+        All applicants must also complete the General Project Team Application below:
+      </p>
+    </Col>
+    <div className="text-center ">
+      <ActionButton
+        teal
+        link="https://cornell.ca1.qualtrics.com/jfe/form/SV_8Cwqf6qrtGmT2wC">
+          Project Team Application
       </ActionButton>
     </div>
 
