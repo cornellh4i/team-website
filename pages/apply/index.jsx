@@ -7,7 +7,7 @@ import InvolveSection from '../../components/apply/involveSection';
 import Section from '../../components/section';
 import { Container } from 'reactstrap';
 
-function ApplyPage({ faqsCollection, appSteps }) {
+function ApplyPage({ faqsCollection }) {
   return (
     <>
       <Head title="Apply" />
@@ -21,11 +21,11 @@ function ApplyPage({ faqsCollection, appSteps }) {
           <InvolveSection />
         </Container>
       </Section>
-      {/* <Section>
+      <Section>
         <Container>
-          <ApplicationProcess steps={appSteps} />
+          <ApplicationProcess steps={faqsCollection.steps} />
         </Container>
-      </Section> */}
+      </Section>
       {faqsCollection?.items?.length > 0 && <Faq questions={faqsCollection.items} />}
     </>
   );
