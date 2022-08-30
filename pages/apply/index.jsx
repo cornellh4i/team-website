@@ -22,11 +22,7 @@ function ApplyPage({ faqsCollection, timelineCollection }) {
           <InvolveSection />
         </Container>
       </Section>
-      <Section>
-        <Container>
-          <ApplicationProcess steps={timelineCollection.items} />
-        </Container>
-      </Section>
+      {timelineCollection?.items?.length > 0 && <ApplicationProcess steps={timelineCollection.items} />}
       {faqsCollection?.items?.length > 0 && <Faq questions={faqsCollection.items} />}
     </>
   );
