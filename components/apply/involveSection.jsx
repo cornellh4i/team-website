@@ -84,14 +84,6 @@ const InvolveSection = ({ faqsCollection }) => (
       </ActionButton>
     </div>
 
-    <Row>
-          <p
-            style={{
-              padding: '38px 0 35px 0',
-            }}>
-          </p>
-        </Row>
-
     <Col md="12" className="text-center">
       <h2 className="project-detail-title"> Application Timeline </h2>
     </Col>
