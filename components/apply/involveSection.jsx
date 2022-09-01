@@ -84,7 +84,7 @@ const InvolveSection = ({ faqsCollection }) => (
       </ActionButton>
     </div>
 
-    <Col md="12" className="text-center">
+    {/* <Col md="12" className="text-center">
       <h2 className="project-detail-title"> Application Timeline </h2>
     </Col>
     <Col md="12" className="text-center">
@@ -96,7 +96,7 @@ const InvolveSection = ({ faqsCollection }) => (
       Info Session 4: Sep 22, 5:30PM-6:30PM
       <b>First-Year Applications Due:</b> Sep 29, 11:59PM
       </p>
-    </Col>
+    </Col> */}
 
     {faqsCollection?.items?.length > 0 && <Faq questions={faqsCollection.items} />}
     <style jsx>{`
