@@ -6,9 +6,8 @@ import fetchContent from '../../utils/fetchContent';
 import InvolveSection from '../../components/apply/involveSection';
 import Section from '../../components/section';
 import { Container } from 'reactstrap';
-import Timeline from '../../components/apply/timeline';
 
-function ApplyPage({ faqsCollection, timelineCollection }) {
+function ApplyPage({ faqsCollection }) {
   return (
     <>
       <Head title="Apply" />
@@ -24,7 +23,7 @@ function ApplyPage({ faqsCollection, timelineCollection }) {
       </Section>
       <Section>
         <Container>
-          <ApplicationProcess steps={timelineCollection.items} />
+          <ApplicationProcess steps={faqsCollection.timeline} />
         </Container>
       </Section>
       {faqsCollection?.items?.length > 0 && <Faq questions={faqsCollection.items} />}
