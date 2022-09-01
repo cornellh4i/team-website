@@ -1,7 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 import ActionButton from '../actionButton';
-import Link from 'next/link';
 import Faq from '../faq';
 
 const InvolveSection = ({ faqsCollection }) => (
@@ -71,16 +70,12 @@ const InvolveSection = ({ faqsCollection }) => (
     </Col>
     <hr size="3" width="80%" color="blue"></hr>
     <div className="text-center ">
-      <ActionButton
-        teal
-        link="http://bit.ly/h4i-fa22-firstyears">
+      <ActionButton teal link="http://bit.ly/h4i-fa22-firstyears">
         Apply: First-Year Students
       </ActionButton>
     </div>
     <div className="text-center ">
-      <ActionButton
-        teal
-        link="http://bit.ly/h4i-fa22-upperclassmen">
+      <ActionButton teal link="http://bit.ly/h4i-fa22-upperclassmen">
         Apply: All Other Students
       </ActionButton>
     </div>
