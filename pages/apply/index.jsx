@@ -21,11 +21,6 @@ function ApplyPage({ faqsCollection }) {
           <InvolveSection />
         </Container>
       </Section>
-      <Section>
-        <Container>
-          <ApplicationProcess />
-        </Container>
-      </Section>
       {faqsCollection?.items?.length > 0 && <Faq questions={faqsCollection.items} />}
     </>
   );
