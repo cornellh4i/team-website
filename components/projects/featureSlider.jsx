@@ -81,7 +81,7 @@ function FeatureSlider({ features }) {
         .feature-slider-btn:hover h3 {
           color: var(--primary-blue) !important;
         }
-        .feature-slider-btn:hover 0 {
+        .feature-slider-btn {
           color: black !important;
         }
         .is-active h3 {
