@@ -68,18 +68,29 @@ const InvolveSection = ({ faqsCollection }) => (
         </Row>
       </div>
     </Col>
-    <hr size="3" width="80%" color="blue"></hr>
+    <Col md="12" className="text-center">
+      <p className="mission-body-text">
+        We are currently recruiting for first-year and transfer students! Applications are due
+        September 29th, 11:59 pm. All applicants must fill out the general project team application
+        along with the Hack4Impact application below.
+      </p>
+    </Col>
+    <Row>
+      <p
+        style={{
+          padding: '38px 0 35px 0',
+        }}></p>
+    </Row>
     <div className="text-center ">
       <ActionButton teal link="http://bit.ly/h4i-fa22-firstyears">
-        Apply: First-Year Students
+        Apply: First-Year & Transfer Students
       </ActionButton>
     </div>
     <div className="text-center ">
-      <ActionButton teal link="http://bit.ly/h4i-fa22-upperclassmen">
-        Apply: All Other Students
+      <ActionButton teal link="https://cornell.ca1.qualtrics.com/jfe/form/SV_8Cwqf6qrtGmT2wC">
+        General Project Team Application
       </ActionButton>
     </div>
-    <hr size="3" width="80%" color="blue"></hr>
 
     {faqsCollection?.items?.length > 0 && <Faq questions={faqsCollection.items} />}
     <style jsx>{`

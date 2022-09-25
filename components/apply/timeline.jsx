@@ -25,9 +25,9 @@ function Timeline({ steps }) {
           <VerticalTimelineElement
             className="vertical-timeline-element-work"
             iconStyle={{ background: 'var(--accent-orange)', color: '#fff' }}
-            icon={<Icon src={image.url} alt={image.description} />}
+            //icon={<Icon src={image.url} alt={image.description} />}
             key={header}>
-            <h3 className="vertical-timeline-element-title">{header}</h3>
+            {/* <h3 className="vertical-timeline-element-title">{header}</h3> */}
             <ContentBlock content={body.json} />
           </VerticalTimelineElement>
         ))}

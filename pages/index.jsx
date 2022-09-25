@@ -6,6 +6,7 @@ import Head from '../components/head';
 import fetchContent from '../utils/fetchContent';
 
 function Home({ previewProjects }) {
+  console.log('layout entry ID: ', process.env.LAYOUT_ENTRY_ID);
   return (
     <>
       <Head title="Hack4Impact Cornell" />
