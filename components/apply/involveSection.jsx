@@ -70,9 +70,8 @@ const InvolveSection = ({ faqsCollection }) => (
     </Col>
     <Col md="12" className="text-center">
       <p className="mission-body-text">
-        We are currently recruiting for first-year and transfer students! Applications are due
-        September 29th, 11:59 pm. All applicants must fill out the general project team application
-        along with the Hack4Impact application below.
+        We are only recruiting designers during Spring 2023! All applicants must fill out the
+        general project team application along with the Hack4Impact application below.
       </p>
     </Col>
     <Row>
@@ -82,8 +81,8 @@ const InvolveSection = ({ faqsCollection }) => (
         }}></p>
     </Row>
     <div className="text-center ">
-      <ActionButton teal link="http://bit.ly/h4i-fa22-firstyears">
-        Apply: First-Year & Transfer Students
+      <ActionButton teal link="http://bit.ly/h4i-sp23app">
+        Apply: Designers
       </ActionButton>
     </div>
     <div className="text-center ">
