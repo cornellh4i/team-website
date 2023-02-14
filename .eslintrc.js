@@ -18,6 +18,7 @@ module.exports = {
         aspects: ['invalidHref', 'preferButton'],
       },
     ],
+    'react/no-unknown-property': ['error', { ignore: ['jsx', 'global'] }],
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
   },
 };

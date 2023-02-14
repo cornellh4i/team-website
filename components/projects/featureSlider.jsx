@@ -14,9 +14,10 @@ function FeatureSlider({ features }) {
           <Col lg={5} md={6}>
             <div className="img-holder">
               {features.map(
-                ({ header, image }) =>
+                ({ header, image }, index) =>
                   header === currFeatureHeader && (
                     <Spring
+                      key={`feature-${index}`}
                       from={{ opacity: 0, transform: 'translate3d(0,100px,0)' }}
                       to={{ opacity: 100, transform: 'translate3d(0,0px,0)' }}>
                       {(props) => (

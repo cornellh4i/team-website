@@ -1,9 +1,10 @@
 import React from 'react';
-import { Row, Card, Col, Container } from 'reactstrap';
+import { Container } from 'reactstrap';
 import Section from '../section';
 
 // need to add to this whenever a new library/technology is used
 // this must match the strings listed in props.techStack, which is an array
+/*
 const icons = {
   AWS: {
     link: 'https://aws.amazon.com',
@@ -171,6 +172,7 @@ const icons = {
     imgPath: '/images/techStack/yargs.png',
   },
 };
+*/
 
 function ProjectTechUsed({ technologiesUsed }) {
   return technologiesUsed?.length ? (

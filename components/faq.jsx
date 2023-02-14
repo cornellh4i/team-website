@@ -13,10 +13,10 @@ export default function Faq({ questions }) {
         ))}
       </Container>
       <style jsx>{`
-      .section-title {
-        text-align: center;
-      }
-    `}</style>
+        .section-title {
+          text-align: center;
+        }
+      `}</style>
     </Section>
   );
 }

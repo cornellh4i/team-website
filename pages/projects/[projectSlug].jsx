@@ -1,14 +1,11 @@
 import React from 'react';
 import Head from '../../components/head';
 import fetchContent from '../../utils/fetchContent';
-import Team from '../../components/projects/Team';
-import FeatureSlider from '../../components/projects/featureSlider';
 import ProjectQuote from '../../components/quote';
 import ContentBlock from '../../components/ContentBlock';
 import ActionButton from '../../components/actionButton';
 import { Row, Col } from 'reactstrap';
 import GradientBanner from '../../components/gradientBanner';
-import ProjectTechUsed from '../../components/projects/projectTechUsed';
 
 function ProjectPage({
   title,
@@ -20,8 +17,6 @@ function ProjectPage({
   solution,
   featuresCollection,
   testimonialsCollection,
-  technologiesUsed,
-  teamMembersCollection,
 }) {
   return (
     <>
@@ -61,6 +56,7 @@ function ProjectPage({
           </Col>
         </Row>
       </section>
+      {/* To add these back, add necessary props to this component such as featuresCollectio and technologiesUsed props */}
       {/* <FeatureSlider features={featuresCollection.items} /> */}
       {/* <ProjectTechUsed technologiesUsed={technologiesUsed.split(',').map((t) => t.trim())} /> */}
       {testimonialsCollection.items.map(({ author, quote }) => {
