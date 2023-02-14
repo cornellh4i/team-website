@@ -14,11 +14,13 @@ jobs:
         with:
           node-version: 12
 
-      - name: Install dependencies
-        run: npm i
+      - name: Yarn install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
 
       - name: Check formatting
-        run: npm run format:check
+        run: yarn format:check
 
   lint:
     runs-on: ubuntu-latest
@@ -31,11 +33,13 @@ jobs:
         with:
           node-version: 12
 
-      - name: Install dependencies
-        run: npm i
+      - name: Yarn install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
 
       - name: Run linter
-        run: npm run lint
+        run: yarn lint
 
   build:
     runs-on: ubuntu-latest
@@ -48,11 +52,13 @@ jobs:
         with:
           node-version: 12
 
-      - name: Install dependencies
-        run: npm i
+      - name: Yarn install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
 
       - name: Build application
-        run: npm run build
+        run: yarn build
         env:
           NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN }}
           NEXT_PUBLIC_CONTENTFUL_SPACE_ID: ${{ secrets.NEXT_PUBLIC_CONTENTFUL_SPACE_ID }}
