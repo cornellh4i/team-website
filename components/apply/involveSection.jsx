@@ -6,7 +6,7 @@ import Faq from '../faq';
 const InvolveSection = ({ faqsCollection }) => (
   <Row>
     <Col md="12" className="text-center">
-      <h2 className="project-detail-title"> Applications are now open! </h2>
+      <h2 className="project-detail-title"> Applications are closed for Spring 2023 </h2>
     </Col>
     <Col md="12" className="text-center">
       <p className="mission-body-text">

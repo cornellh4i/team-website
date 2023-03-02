@@ -14,7 +14,7 @@ function ApplyPage({ faqsCollection, timelineCollection }) {
       <Head title="Apply" />
       <GradientBanner
         title="Apply"
-        subHeadline="We're open to developers and designers of all backgrounds! Recruitment occurs in the beginning of the Fall and Spring Semester."
+        // subHeadline="We're open to developers and designers of all backgrounds! Recruitment occurs in the beginning of the Fall and Spring Semester."
         arrow
       />
       <Section>
