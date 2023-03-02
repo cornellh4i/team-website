@@ -16,31 +16,42 @@ const MissionSection = () => (
       <Row>
         <Col md="12" className="text-center">
           <p className="mission-body-text">
-            Hack4Impact exists for both nonprofits and students. We connect student software
-            developers with nonprofits and other socially responsible businesses to develop powerful
-            new tools for social change. This enables nonprofits to further their mission and better
-            engage their clients. We are committed to increasing awareness of technology&#39;s
-            potential for good.
+            Hack4Impact exists for both nonprofits and students. 
+            We connect student software developers with nonprofits 
+            and socially responsible organizations to develop powerful 
+            new tools for social change to help further their mission. 
+            We are committed to increasing awareness of technology's potential 
+            for good through talks and workshops.
           </p>
         </Col>
       </Row>
       <Row>
         <div className="left-image">
-          <img src="/images/CornellH4i4.jpg" className="img-fluid" alt="Hack4Impact Team" />
+          <img src="/images/socialsp22.jpg" className="img-fluid" alt="Hack4Impact Team" />
+        </div>
+        <div className="middle-image">
+          <img src="/images/picnicsp22.JPG" className="img-fluid" alt="Hack4Impact Team" />
         </div>
         <div className="right-image">
-          <img src="/images/TeamPhoto.png" className="img-fluid" alt="Hack4Impact Team" />
+          <img src="/images/awardsp22.JPG" className="img-fluid" alt="Hack4Impact Team" />
         </div>
       </Row>
     </Container>
     <style jsx>{`
       .left-image {
-        width: 50%;
+        width: 30%;
         left: 0px;
+        height: 100%;
+        margin: auto;
+      }
+      .middle-image {
+        width: 30%;
+        margin: auto;
         height: 100%;
       }
       .right-image {
-        width: 50%;
+        width: 30%;
+        margin: auto;
         right: 0px;
         height: 100%;
       }
