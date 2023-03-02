@@ -53,7 +53,7 @@ const InvolveSection = ({ faqsCollection }) => (
     </Col>
     <Col md="4">
       <div className="involved-container">
-        <h3 className="text-title text-center">External</h3>
+        <h3 className="text-title text-center">Business</h3>
         <a>
           <img src="/images/CornellH4i3.jpg" className="img-fluid" alt="Hack4Impact Designers" />
         </a>
