@@ -25,7 +25,7 @@ const MissionSection = () => (
           </p>
         </Col>
       </Row>
-      <Row>
+      <Row style={{ flexWrap: 'nowrap'}}>
         <div className="left-image">
           <img src="/images/socialsp22.jpg" className="img-fluid" alt="Hack4Impact Team" />
         </div>
@@ -39,27 +39,30 @@ const MissionSection = () => (
     </Container>
     <style jsx>{`
       .left-image {
-        width: 30%;
+        width: 40%;
         left: 0px;
         height: 100%;
-        margin: auto;
+        margin: 5px;
       }
       .middle-image {
-        width: 30%;
-        margin: auto;
+        width: 40%;
+        margin: 5px;
         height: 100%;
       }
       .right-image {
-        width: 30%;
-        margin: auto;
+        width: 40%;
+        margin: 5px;
         right: 0px;
         height: 100%;
       }
       .mission-body-text {
         color: #323648;
-
         font-weight: 550;
         letter-spacing: 0.6px;
+        margin-bottom: 50px;
+      }
+      .mission-section{
+        padding-bottom: 0; 
       }
     `}</style>
   </section>
