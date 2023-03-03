@@ -1,9 +1,11 @@
 import React from 'react';
-import { Container, Row, Card, CardDeck, CardBody } from 'reactstrap';
+// import { Container, Row, Card, CardDeck, CardBody } from 'reactstrap';
+import { Container, Row } from 'reactstrap';
 import Section from '../section';
-import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+// import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 
-const OurValues = ({ content }) => (
+const OurValues = () => (
+  // { content }
   <Section>
     <Container>
       <Row className="text-center">
@@ -18,26 +20,27 @@ const OurValues = ({ content }) => (
         </div>
 
         <div className="right-text">
-          <p className = "mission-title">Go Beyond Technology</p>
-          <p className="mission-text">Technology impacts people. We seek to educate ourselves 
-            about the implications of technology on various communities, 
-            while making mindful decisions about the potential impact of 
-            the projects that we develop.</p>
+          <p className="mission-title">Go Beyond Technology</p>
+          <p className="mission-text">
+            Technology impacts people. We seek to educate ourselves about the implications of
+            technology on various communities, while making mindful decisions about the potential
+            impact of the projects that we develop.
+          </p>
         </div>
       </Row>
 
       <Row style={{ paddingBottom: '70px' }}>
         <div className="left-text">
           <p className="mission-title">Community and Collaboration</p>
-          <p className="mission-text">Through a tight-knit community, we strive to help each other learn 
-            and grow in the social impact and engineering space. Connect with 
-            local members, alums, and people from across the country with varied 
-            interests, skills, and passions.</p>
+          <p className="mission-text">
+            Through a tight-knit community, we strive to help each other learn and grow in the
+            social impact and engineering space. Connect with local members, alums, and people from
+            across the country with varied interests, skills, and passions.
+          </p>
         </div>
         <div className="left-image">
           <img src="/images/winetoursp22.JPG" className="img-fluid" alt="Hack4Impact Team" />
         </div>
-        
       </Row>
 
       <Row style={{ paddingBottom: '70px' }}>
@@ -45,14 +48,13 @@ const OurValues = ({ content }) => (
           <img src="/images/eboardsocialfa22.JPG" className="img-fluid" alt="Hack4Impact Team" />
         </div>
         <div className="right-text">
-            <p className="mission-title">High Accountability</p>
-            <p className="mission-text">Technology impacts people. We seek to educate ourselves 
-              about the implications of technology on various communities, 
-              while making mindful decisions about the potential impact of 
-              the projects that we develop.</p>
+          <p className="mission-title">High Accountability</p>
+          <p className="mission-text">
+            Technology impacts people. We seek to educate ourselves about the implications of
+            technology on various communities, while making mindful decisions about the potential
+            impact of the projects that we develop.
+          </p>
         </div>
-        
-        
       </Row>
 
       {/* <CardDeck>
@@ -82,7 +84,6 @@ const OurValues = ({ content }) => (
         right: 0px;
         height: 100%;
         margin: auto;
-
       }
       .left-text {
         width: 37%;
@@ -96,14 +97,14 @@ const OurValues = ({ content }) => (
         height: 100%;
         margin: auto;
       }
-      .mission-title{
+      .mission-title {
         font-weight: bold;
         font-size: 25px;
       }
-      .mission-text{
-        margin:auto
+      .mission-text {
+        margin: auto;
       }
-      .value-row{
+      .value-row {
         padding-bottom: 100px !important;
       }
       .mission-body-text {
@@ -113,7 +114,6 @@ const OurValues = ({ content }) => (
       }
     `}</style>
   </Section>
-  
 );
 
 export default OurValues;
