@@ -16,7 +16,7 @@ const OurValues = () => (
 
       <Row style={{ paddingBottom: '70px' }}>
         <div className="left-image">
-          <img src="/images/winetoursp22.JPG" className="img-fluid" alt="Hack4Impact Team" />
+          <img src="/images/figmaworkshopfa22.jpg" className="img-fluid" alt="Hack4Impact Team" />
         </div>
 
         <div className="right-text">

@@ -23,7 +23,7 @@ const MissionSection = () => (
           </p>
         </Col>
       </Row>
-      <Row style={{ flexWrap: 'nowrap' }}>
+      <Row style={{ flexWrap: 'nowrap', width: '100%'}}>
         <div className="left-image">
           <img src="/images/socialsp22.jpg" className="img-fluid" alt="Hack4Impact Team" />
         </div>
