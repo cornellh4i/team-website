@@ -21,10 +21,10 @@ const OurValues = ({ content }) => (
         <div className="right-text">
           <p className="mission-title">{content[0].header}</p>
           <p className="mission-text">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: documentToHtmlString(content[0].body.json),
-            }}></div>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: documentToHtmlString(content[0].body.json),
+              }}></div>
           </p>
         </div>
       </Row>
@@ -33,10 +33,10 @@ const OurValues = ({ content }) => (
         <div className="left-text">
           <p className="mission-title">{content[1].header}</p>
           <p className="mission-text">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: documentToHtmlString(content[1].body.json),
-            }}></div>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: documentToHtmlString(content[1].body.json),
+              }}></div>
           </p>
         </div>
         <div className="left-image">
@@ -51,14 +51,13 @@ const OurValues = ({ content }) => (
         <div className="right-text">
           <p className="mission-title">{content[2].header}</p>
           <p className="mission-text">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: documentToHtmlString(content[2].body.json),
-            }}></div>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: documentToHtmlString(content[2].body.json),
+              }}></div>
           </p>
         </div>
       </Row>
-
     </Container>
     <style jsx>{`
       .left-image {
