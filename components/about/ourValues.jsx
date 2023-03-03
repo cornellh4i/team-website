@@ -2,10 +2,9 @@ import React from 'react';
 // import { Container, Row, Card, CardDeck, CardBody } from 'reactstrap';
 import { Container, Row } from 'reactstrap';
 import Section from '../section';
-// import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 
-const OurValues = () => (
-  // { content }
+const OurValues = ({ content }) => (
   <Section>
     <Container>
       <Row className="text-center">
@@ -16,61 +15,50 @@ const OurValues = () => (
 
       <Row style={{ paddingBottom: '70px' }}>
         <div className="left-image">
-          <img src="/images/figmaworkshopfa22.jpg" className="img-fluid" alt="Hack4Impact Team" />
+          <img src={content[0].image.url} className="img-fluid" alt="Hack4Impact Team" />
         </div>
 
         <div className="right-text">
-          <p className="mission-title">Go Beyond Technology</p>
+          <p className="mission-title">{content[0].header}</p>
           <p className="mission-text">
-            Technology impacts people. We seek to educate ourselves about the implications of
-            technology on various communities, while making mindful decisions about the potential
-            impact of the projects that we develop.
+          <div
+            dangerouslySetInnerHTML={{
+              __html: documentToHtmlString(content[0].body.json),
+            }}></div>
           </p>
         </div>
       </Row>
 
       <Row style={{ paddingBottom: '70px' }}>
         <div className="left-text">
-          <p className="mission-title">Community and Collaboration</p>
+          <p className="mission-title">{content[1].header}</p>
           <p className="mission-text">
-            Through a tight-knit community, we strive to help each other learn and grow in the
-            social impact and engineering space. Connect with local members, alums, and people from
-            across the country with varied interests, skills, and passions.
+          <div
+            dangerouslySetInnerHTML={{
+              __html: documentToHtmlString(content[1].body.json),
+            }}></div>
           </p>
         </div>
         <div className="left-image">
-          <img src="/images/winetoursp22.JPG" className="img-fluid" alt="Hack4Impact Team" />
+          <img src={content[1].image.url} className="img-fluid" alt="Hack4Impact Team" />
         </div>
       </Row>
 
       <Row style={{ paddingBottom: '70px' }}>
         <div className="left-image">
-          <img src="/images/eboardsocialfa22.JPG" className="img-fluid" alt="Hack4Impact Team" />
+          <img src={content[2].image.url} className="img-fluid" alt="Hack4Impact Team" />
         </div>
         <div className="right-text">
-          <p className="mission-title">High Accountability</p>
+          <p className="mission-title">{content[2].header}</p>
           <p className="mission-text">
-            Technology impacts people. We seek to educate ourselves about the implications of
-            technology on various communities, while making mindful decisions about the potential
-            impact of the projects that we develop.
+          <div
+            dangerouslySetInnerHTML={{
+              __html: documentToHtmlString(content[2].body.json),
+            }}></div>
           </p>
         </div>
       </Row>
 
-      {/* <CardDeck>
-        {content.map(({ header, body, image }) => (
-          <Card key={header}>
-            <img className="card-img-top" src={image.url} alt={image.description} />
-            <CardBody>
-              <h4 className="text-title">{header}</h4>
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: documentToHtmlString(body.json),
-                }}></div>
-            </CardBody>
-          </Card>
-        ))}
-      </CardDeck> */}
     </Container>
     <style jsx>{`
       .left-image {
