@@ -9,10 +9,10 @@ function Home({ previewProjects }) {
   console.log('layout entry ID: ', process.env.LAYOUT_ENTRY_ID);
   return (
     <>
-      <Head title="Hack4Impact Cornell" />
-      <ToastContainer />
-      <Banner />
-      <OurWorkSection projects={previewProjects} />
+			      <Head title="Hack4Impact Cornell" />
+      							<ToastContainer />
+      		<Banner />
+      	<OurWorkSection projects={previewProjects} />
     </>
   );
 }
@@ -22,7 +22,7 @@ export default Home;
 export async function getStaticProps() {
   const {
     websiteLayout: { projectsCollection },
-  } = await fetchContent(`
+  } = 			await fetchContent(`
   {
     websiteLayout(id: "${process.env.LAYOUT_ENTRY_ID}") {
       projectsCollection(limit: 3) {
