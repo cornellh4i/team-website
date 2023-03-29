@@ -1,5 +1,5 @@
 import React from 'react';
-import GradientBanner from '../../components/gradientBanner';
+import CoverBanner from '../../components/CoverBanner';
 import Head from '../../components/head';
 import TeamList from '../../components/team/teamList';
 import Alumni from '../../components/team/alumni';
@@ -9,7 +9,7 @@ function TeamPage({ members, alumni }) {
   return (
     <>
       <Head title="Apply" />
-      <GradientBanner
+      <CoverBanner
         // style={{
         //   backgroundImage:
         //     'url(' +
@@ -23,6 +23,7 @@ function TeamPage({ members, alumni }) {
         title="Our Team"
         subHeadline="At Hack4Impact Cornell, we're fortunate to have a passionate and talented group of 
         software developers, designers, and organizers who help turn our vision into a reality."
+        backgroundImage={'https://i.imgur.com/U46l1Xe.jpg'}
       />
       <p>&nbsp;</p>
       <TeamList members={members} />
