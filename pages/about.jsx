@@ -1,5 +1,5 @@
 import React from 'react';
-import CoverBanner from '../components/coverBanner';
+import CoverBanner from '../components/CoverBanner';
 import MissionSection from '../components/about/missionSection';
 import OurValues from '../components/about/ourValues';
 import Head from '../components/head';

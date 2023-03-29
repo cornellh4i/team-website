@@ -3,7 +3,6 @@ import Head from '../../components/head';
 import CoverBanner from '../../components/CoverBanner';
 import ProjectList from '../../components/projects/projectList';
 import fetchContent from '../../utils/fetchContent';
-import ActionButton from '../../components/actionButton';
 
 function Projects({ projects }) {
   return (
