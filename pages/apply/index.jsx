@@ -1,7 +1,6 @@
 import React from 'react';
 import Faq from '../../components/faq';
 import Timeline from '../../components/apply/timeline';
-import GradientBanner from '../../components/gradientBanner';
 import CoverBanner from '../../components/CoverBanner';
 import Head from '../../components/head';
 import fetchContent from '../../utils/fetchContent';

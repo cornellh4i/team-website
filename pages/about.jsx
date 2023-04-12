@@ -1,5 +1,4 @@
 import React from 'react';
-import GradientBanner from '../components/gradientBanner';
 import MissionSection from '../components/about/missionSection';
 import CoverBanner from '../components/CoverBanner';
 import OurValues from '../components/about/ourValues';

@@ -1,5 +1,4 @@
 import React from 'react';
-import GradientBanner from '../../components/gradientBanner';
 import CoverBanner from '../../components/CoverBanner';
 import Head from '../../components/head';
 import TeamList from '../../components/team/teamList';

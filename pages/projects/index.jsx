@@ -1,9 +1,7 @@
 import React from 'react';
 import Head from '../../components/head';
-import GradientBanner from '../../components/gradientBanner';
 import CoverBanner from '../../components/CoverBanner';
 import ProjectList from '../../components/projects/projectList';
-import ActionButton from '../../components/actionButton';
 import fetchContent from '../../utils/fetchContent';
 
 function Projects({ projects }) {
