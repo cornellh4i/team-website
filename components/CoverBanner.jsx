@@ -68,6 +68,7 @@ const CoverBanner = ({ title, subHeadline, style, backgroundImage, children }) =
             #c0f0ff 97.4%
           ),
           url(${backgroundImage});
+        background-size: cover;
         @media (max-width: $tablet-width) {
           padding: 40px 0;
           padding-top: calc(40px + var(--nav-height));
