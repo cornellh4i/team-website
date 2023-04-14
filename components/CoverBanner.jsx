@@ -99,7 +99,7 @@ const CoverBanner = ({ title, subHeadline, style, backgroundImage, children }) =
         margin-top: 20px;
         margin-right: 20%;
         margin-left: 7%;
-        font-family: 'Inter';
+        font-family: 'HK Grotesk';
         font-style: normal;
         font-weight: 700;
         font-size: 22px;
