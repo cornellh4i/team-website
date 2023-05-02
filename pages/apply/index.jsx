@@ -12,6 +12,7 @@ function ApplyPage({ faqsCollection, timelineCollection }) {
   return (
     <>
       <Head title="Apply" />
+      <div>
       <CoverBanner
         style={{ marginTop: 'var(--nav-height)' }}
         title="Apply"
@@ -35,7 +36,7 @@ function ApplyPage({ faqsCollection, timelineCollection }) {
         </Container>
       </Section>
       {faqsCollection?.items?.length > 0 && <Faq questions={faqsCollection.items} />}
-    </>
+    </div>
   );
 }
 
