@@ -1,7 +1,7 @@
 import React from 'react';
 import Faq from '../../components/faq';
 import Timeline from '../../components/apply/timeline';
-import CoverBanner from '../../components/CoverBanner';
+import GradientBanner from '../../components/gradientBanner';
 import Head from '../../components/head';
 import fetchContent from '../../utils/fetchContent';
 import InvolveSection from '../../components/apply/involveSection';
@@ -12,12 +12,12 @@ function ApplyPage({ faqsCollection, timelineCollection }) {
   return (
     <>
       <Head title="Apply" />
-      <CoverBanner
+      <GradientBanner
         style={{ marginTop: 'var(--nav-height)' }}
         title="Apply"
         subHeadline="We're open to developers and designers of all backgrounds! Recruitment is closed now, but check in later!"
         backgroundImage={'https://i.imgur.com/dh6Jrsd.png'}
-        //arrow
+        arrow
       />
       <Section>
         <Container>
