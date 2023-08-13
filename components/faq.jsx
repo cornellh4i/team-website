@@ -14,6 +14,7 @@ export default function Faq({ questions }) {
       </Container>
       <style jsx>{`
         .section-title {
+          margin-top: -40px;
           text-align: center;
         }
       `}</style>

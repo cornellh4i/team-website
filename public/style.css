@@ -161,6 +161,12 @@ h2 {
   word-wrap: break-word;
 }
 
+.recruitment-process {
+  font-size: 30px;
+  margin-top: -75px;
+  margin-bottom: 0;
+}
+
 .styled-btn {
   border-image: initial;
   overflow: hidden;
