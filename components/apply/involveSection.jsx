@@ -6,7 +6,7 @@ import Faq from '../faq';
 const InvolveSection = ({ faqsCollection }) => (
   <Row>
     <Col md="12" className="text-center">
-      <h2 className="project-detail-title"> Applications are closed for Spring 2023 </h2>
+      <h2 className="project-detail-title"> Applications are open for Fall 2023 </h2>
     </Col>
     <Col md="12" className="text-center">
       <p className="mission-body-text">
@@ -26,7 +26,7 @@ const InvolveSection = ({ faqsCollection }) => (
         <Row>
           <p
             style={{
-              padding: '38px 0 35px 0',
+              padding: '32px 0 35px 0',
             }}>
             Interested in designing projects for a wide variety of applications and real partners?
             Apply to Hack4Impact's design team!
@@ -44,7 +44,7 @@ const InvolveSection = ({ faqsCollection }) => (
       <Row>
         <p
           style={{
-            padding: '38px 0 35px 0',
+            padding: '42px 0 35px 0',
           }}>
           Interested in developing products for social good that benefit organizations in your
           community? Apply to Hack4Impact's development team!
@@ -55,12 +55,12 @@ const InvolveSection = ({ faqsCollection }) => (
       <div className="involved-container">
         <h3 className="text-title text-center">Business</h3>
         <a>
-          <img src="/images/CornellH4i3.jpg" className="img-fluid" alt="Hack4Impact Designers" />
+          <img src="/images/Business.png" className="img-fluid" alt="Hack4Impact Business Members" />
         </a>
         <Row>
           <p
             style={{
-              padding: '38px 0 35px 0',
+              padding: '28px 0 35px 0',
             }}>
             Interested in product research, marketing, finance, and innovation in the tech and
             social good space? Apply to Hack4Impact's business team!
@@ -70,7 +70,7 @@ const InvolveSection = ({ faqsCollection }) => (
     </Col>
     <Col md="12" className="text-center">
       <p className="mission-body-text">
-        We are only recruiting designers during Spring 2023! All applicants must fill out the
+        We are recruiting designers, developers, and business members during Fall 2023! All applicants must fill out the
         general project team application along with the Hack4Impact application below.
       </p>
     </Col>
@@ -81,8 +81,8 @@ const InvolveSection = ({ faqsCollection }) => (
         }}></p>
     </Row>
     <div className="text-center ">
-      <ActionButton teal link="http://bit.ly/h4i-sp23app">
-        Apply: Designers
+      <ActionButton teal link="https://bit.ly/h4i-application-fa23">
+        H4I Application for All Positions! 
       </ActionButton>
     </div>
     <div className="text-center ">

@@ -16,7 +16,7 @@ function ApplyPage({ faqsCollection, timelineCollection }) {
         style={{ marginTop: 'var(--nav-height)' }}
         title="Apply"
         subHeadline="We're open to developers and designers of all backgrounds! Recruitment is closed now, but check in later!"
-        backgroundImage={'https://i.imgur.com/dh6Jrsd.png'}
+        backgroundImage={'https://i.imgur.com/wsEPhxh.png'}
         arrow
       />
       <Section>
@@ -27,7 +27,7 @@ function ApplyPage({ faqsCollection, timelineCollection }) {
       <Section>
         <Container>
           <div className="text-center">
-            <h2 className="project-detail-title"> Recruitment Process </h2>
+            <h2 className="recruitment-process"> Recruitment Process </h2>
           </div>
           <div className="text-center ">
             {timelineCollection?.items?.length > 0 && <Timeline steps={timelineCollection.items} />}
