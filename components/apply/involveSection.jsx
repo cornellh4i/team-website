@@ -74,15 +74,15 @@ const InvolveSection = ({ faqsCollection }) => (
     </Col>
     <Col md="12" className="text-center">
       <p className="mission-body-text">
-        We are recruiting designers, developers, and business members during Fall 2023! All
-        applicants must fill out the general project team application along with the Hack4Impact
-        application below.
+        We are recruiting designers, developers, and business members during Fall 2023! We are only
+        recruiting upperclassmen! All applicants must fill out the general project team application
+        along with the Hack4Impact application below.
       </p>
     </Col>
     <Row>
       <p
         style={{
-          padding: '38px 0 35px 0',
+          padding: '50px 0 35px 0',
         }}></p>
     </Row>
     <div className="text-center ">
