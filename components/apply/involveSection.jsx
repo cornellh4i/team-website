@@ -55,7 +55,11 @@ const InvolveSection = ({ faqsCollection }) => (
       <div className="involved-container">
         <h3 className="text-title text-center">Business</h3>
         <a>
-          <img src="/images/Business.png" className="img-fluid" alt="Hack4Impact Business Members" />
+          <img
+            src="/images/Business.png"
+            className="img-fluid"
+            alt="Hack4Impact Business Members"
+          />
         </a>
         <Row>
           <p
@@ -70,8 +74,9 @@ const InvolveSection = ({ faqsCollection }) => (
     </Col>
     <Col md="12" className="text-center">
       <p className="mission-body-text">
-        We are recruiting designers, developers, and business members during Fall 2023! All applicants must fill out the
-        general project team application along with the Hack4Impact application below.
+        We are recruiting designers, developers, and business members during Fall 2023! All
+        applicants must fill out the general project team application along with the Hack4Impact
+        application below.
       </p>
     </Col>
     <Row>
@@ -82,7 +87,7 @@ const InvolveSection = ({ faqsCollection }) => (
     </Row>
     <div className="text-center ">
       <ActionButton teal link="https://bit.ly/h4i-application-fa23">
-        H4I Application for All Positions! 
+        H4I Application for All Positions!
       </ActionButton>
     </div>
     <div className="text-center ">
