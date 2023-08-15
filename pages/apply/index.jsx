@@ -15,23 +15,20 @@ function ApplyPage({ faqsCollection, timelineCollection }) {
       <CoverBanner
         style={{ marginTop: 'var(--nav-height)' }}
         title="Apply"
-        subHeadline="We're open to developers and designers of all backgrounds! Recruitment is closed now, but check in later!"
+        subHeadline="We're open to developers and designers of all backgrounds! Applications are open now, take a look at our timeline and feel free to reach out!"
         backgroundImage={'https://i.imgur.com/wsEPhxh.png'}
         arrow
       />
       <Section>
         <Container>
-          <InvolveSection />
+          <div className="text-center-left">
+            {timelineCollection?.items?.length > 0 && <Timeline steps={timelineCollection.items} />}
+          </div>
         </Container>
       </Section>
       <Section>
         <Container>
-          <div className="text-center">
-            <h2 className="recruitment-process"> Recruitment Process </h2>
-          </div>
-          <div className="text-center ">
-            {timelineCollection?.items?.length > 0 && <Timeline steps={timelineCollection.items} />}
-          </div>
+          <InvolveSection />
         </Container>
       </Section>
       {faqsCollection?.items?.length > 0 && <Faq questions={faqsCollection.items} />}

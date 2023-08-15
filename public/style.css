@@ -79,6 +79,11 @@ button {
   text-align: center;
   margin: 0 auto;
 }
+
+.text-center-left {
+  text-align: center;
+  margin-left: -200px;
+}
 .center {
   text-align: center;
   margin: auto;
@@ -234,6 +239,10 @@ h2 {
 
 .blockquote-footer {
   color: #555;
+}
+
+.timeline {
+  margin-bottom: -150px;
 }
 
 @media (max-width: 900px) {
