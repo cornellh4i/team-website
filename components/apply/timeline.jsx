@@ -21,11 +21,11 @@ const CustomStepLabel = styled(StepLabel)(() => ({
   },
 }));
 
-function Timeline({ steps }) {
+function Timeline({ steps, activeIndex }) {
   return (
     <div className="timeline">
-      <Box sx={{ width: '115%' }}>
-        <Stepper activeStep={1} alternativeLabel>
+      <Box sx={{ width: '100%' }}>
+        <Stepper activeStep={activeIndex} alternativeLabel>
           {steps &&
             steps.map((step) => (
               <Step key={step.header}>

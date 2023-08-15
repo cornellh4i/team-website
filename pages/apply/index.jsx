@@ -8,7 +8,7 @@ import InvolveSection from '../../components/apply/involveSection';
 import Section from '../../components/section';
 import { Container } from 'reactstrap';
 
-function ApplyPage({ faqsCollection, timelineCollection }) {
+function ApplyPage({ faqsCollection, timelineCollection, importantEventsCollection }) {
   return (
     <>
       <Head title="Apply" />
@@ -21,14 +21,28 @@ function ApplyPage({ faqsCollection, timelineCollection }) {
       />
       <Section>
         <Container>
-          <div className="text-center-left">
-            {timelineCollection?.items?.length > 0 && <Timeline steps={timelineCollection.items} />}
+          <div className="text-center">
+            {timelineCollection?.items?.length > 0 && (
+              <Timeline steps={timelineCollection.items} activeIndex={1} />
+            )}
           </div>
         </Container>
       </Section>
       <Section>
         <Container>
           <InvolveSection />
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <div className="text-center">
+            <div style={{ marginBottom: '75px', marginTop: '-75px' }}>
+              <div className="section-title">Important Events</div>
+              {importantEventsCollection?.items?.length > 0 && (
+                <Timeline steps={importantEventsCollection.items} activeIndex={0} />
+              )}
+            </div>
+          </div>
         </Container>
       </Section>
       {faqsCollection?.items?.length > 0 && <Faq questions={faqsCollection.items} />}
@@ -51,6 +65,18 @@ export async function getStaticProps() {
           json
         }
         timelineCollection {
+          items {
+            header
+            body {
+              json
+            }
+            image {
+              url
+              description
+            }
+          }
+        }
+        importantEventsCollection {
           items {
             header
             body {
