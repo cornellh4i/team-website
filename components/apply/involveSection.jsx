@@ -85,19 +85,30 @@ const InvolveSection = ({ faqsCollection }) => (
           padding: '50px 0 35px 0',
         }}></p>
     </Row>
-    <div className="text-center ">
+    <div className="text-center col-md-4 mb-3 mb-md-0">
       <ActionButton teal link="https://bit.ly/h4i-application-fa23">
-        H4I Application for All Positions!
+        <span className="button-text">H4I Application for All Position!</span>
       </ActionButton>
     </div>
-    <div className="text-center ">
+    <div className="text-center col-md-4 mb-3 mb-md-0 mt-3 mt-md-0">
       <ActionButton teal link="https://cornell.ca1.qualtrics.com/jfe/form/SV_8Cwqf6qrtGmT2wC">
-        General Project Team Application
+        <span className="button-text">General Project Team Application</span>
+      </ActionButton>
+    </div>
+    <div className="text-center col-md-4 mt-3 mt-md-0">
+      <ActionButton
+        teal
+        link="https://docs.google.com/spreadsheets/d/1xwIBLUStdPkqqZ2TM4nYLa6UQtDorp2W_nHP9G377OY/edit#gid=0">
+        <span className="button-text">Coffee Chat an existing member!</span>
       </ActionButton>
     </div>
 
     {faqsCollection?.items?.length > 0 && <Faq questions={faqsCollection.items} />}
     <style jsx>{`
+      .button-text {
+        font-size: 14px; /* Adjust the font size as needed */
+      }
+
       img {
         display: block;
         margin: 7% auto;
