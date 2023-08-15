@@ -63,9 +63,9 @@ const CoverBanner = ({ title, subHeadline, style, backgroundImage, children }) =
         padding-top: calc(60px + var(--nav-height));
         background-image: linear-gradient(
             180deg,
-            rgba(160, 185, 207, 0.24) 17.71%,
-            rgba(215, 233, 255, 0.72) 40.63%,
-            #c0f0ff 97.4%
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0) 50%,
+            rgba(255, 255, 255, 1) 100%
           ),
           url(${backgroundImage});
         background-size: cover;
@@ -84,6 +84,7 @@ const CoverBanner = ({ title, subHeadline, style, backgroundImage, children }) =
         font-weight: 700;
         font-size: 56px;
         line-height: 67px;
+        padding-top: 100px;
 
         color: #000000;
 
