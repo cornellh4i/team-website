@@ -22,27 +22,28 @@ function ApplyPage({ faqsCollection, timelineCollection, importantEventsCollecti
       <Section>
         <Container>
           <div className="text-center">
+            <div className="section-title">Fall 2023 Recruitment Timeline</div>
             {timelineCollection?.items?.length > 0 && (
               <Timeline steps={timelineCollection.items} activeIndex={1} />
             )}
           </div>
         </Container>
+        <Section>
+          <Container>
+            <div style={{ marginTop: '100px', marginBottom: '-200px' }}>
+              <div className="text-center">
+                <div className="section-title">Important Events</div>
+                {importantEventsCollection?.items?.length > 0 && (
+                  <Timeline steps={importantEventsCollection.items} activeIndex={0} />
+                )}
+              </div>
+            </div>
+          </Container>
+        </Section>
       </Section>
       <Section>
         <Container>
           <InvolveSection />
-        </Container>
-      </Section>
-      <Section>
-        <Container>
-          <div className="text-center">
-            <div style={{ marginBottom: '75px', marginTop: '-75px' }}>
-              <div className="section-title">Important Events</div>
-              {importantEventsCollection?.items?.length > 0 && (
-                <Timeline steps={importantEventsCollection.items} activeIndex={0} />
-              )}
-            </div>
-          </div>
         </Container>
       </Section>
       {faqsCollection?.items?.length > 0 && <Faq questions={faqsCollection.items} />}
