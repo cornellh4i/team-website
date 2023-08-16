@@ -239,7 +239,7 @@ h2 {
 
 .timeline {
   margin-bottom: -150px;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 @media (max-width: 900px) {
