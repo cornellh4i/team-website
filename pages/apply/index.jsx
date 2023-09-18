@@ -19,6 +19,7 @@ function ApplyPage({ faqsCollection, timelineCollection, importantEventsCollecti
         backgroundImage={'https://i.imgur.com/wsEPhxh.png'}
         arrow
       />
+      {/* Application Timeline
       <Section>
         <Container>
           <div className="text-center">
@@ -28,19 +29,7 @@ function ApplyPage({ faqsCollection, timelineCollection, importantEventsCollecti
             )}
           </div>
         </Container>
-        <Section>
-          <Container>
-            <div style={{ marginTop: '100px', marginBottom: '-200px' }}>
-              <div className="text-center">
-                <div className="section-title">Important Events</div>
-                {importantEventsCollection?.items?.length > 0 && (
-                  <Timeline steps={importantEventsCollection.items} activeIndex={0} />
-                )}
-              </div>
-            </div>
-          </Container>
-        </Section>
-      </Section>
+      </Section> */}
       <Section>
         <Container>
           <InvolveSection />
@@ -66,18 +55,6 @@ export async function getStaticProps() {
           json
         }
         timelineCollection {
-          items {
-            header
-            body {
-              json
-            }
-            image {
-              url
-              description
-            }
-          }
-        }
-        importantEventsCollection {
           items {
             header
             body {
