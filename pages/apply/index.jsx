@@ -1,4 +1,4 @@
-/* eslint no-use-before-define: 0 */
+/* eslint  no-unused-vars: 0 */
 import React from 'react';
 import Faq from '../../components/faq';
 import Timeline from '../../components/apply/timeline';
