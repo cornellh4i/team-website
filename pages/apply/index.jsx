@@ -1,6 +1,6 @@
 import React from 'react';
 import Faq from '../../components/faq';
-import Timeline from '../../components/apply/timeline';
+import Timeline from '../../components/apply/timeline'; // eslint-disable-line
 import CoverBanner from '../../components/CoverBanner';
 import Head from '../../components/head';
 import fetchContent from '../../utils/fetchContent';
@@ -8,6 +8,7 @@ import InvolveSection from '../../components/apply/involveSection';
 import Section from '../../components/section';
 import { Container } from 'reactstrap';
 
+// eslint-disable-next-line no-use-before-define
 function ApplyPage({ faqsCollection, timelineCollection, importantEventsCollection }) {
   return (
     <>
